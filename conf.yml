@@ -1,0 +1,5 @@
+DB_INFO:
+  DB_NAME: # Name of the mysql Database
+  DB_LOCATION: # IP address of the database
+  DB_USER_NAME: # 'databaseUser'@'ipaddress'
+  DB_PASSWORD: # Password for the user
