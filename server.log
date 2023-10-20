@@ -1,0 +1,647 @@
+2023-09-15 18:07:07,288: INFO: <module>: sadfsd
+2023-09-15 18:07:07,298: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 18:15:59,731: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 18:25:23,132: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 18:33:29,228: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:05:14,855: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:05:32,857: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:06:10,438: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:06:39,353: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:08:42,602: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:08:56,901: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:09:06,194: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:10:03,187: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:11:52,505: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:22:42,293: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:22:54,874: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:36:20,127: ERROR: create_db_connection: Error: '1045 (28000): Access denied for user 'nginxDataStore'@'192.168.0.10' (using password: YES)'
+2023-09-15 21:38:09,946: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:39:24,702: ERROR: create_db_connection: Error: '2003 (HY000): Can't connect to MySQL server on '192.168.0.3:3306' (10060)'
+2023-09-15 21:41:22,765: ERROR: create_db_connection: Error: 'Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.3:3306' (10060)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 22, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.3:3306' (10060)
+'
+2023-09-15 21:46:02,987: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.3"
+2023-09-15 21:46:02,989: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.3:3306' (10060)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.3:3306' (10060)
+
+2023-09-15 21:46:35,255: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-15 21:46:45,908: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-15 21:46:45,911: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-15 21:48:11,632: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-15 21:48:11,634: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:25:18,093: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-16 11:25:18,099: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 24, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:29:35,790: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-16 11:29:35,791: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:33:20,301: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-16 11:33:20,303: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:34:59,574: ERROR: create_db_connection: Connection Could not be Established to: "192.168.0.2"
+2023-09-16 11:34:59,577: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:36:35,624: CRITICAL: create_db_connection: Error Could not Connect to: '192.168.0.2 with User: 'nginxdynupdadr''
+2023-09-16 11:36:35,627: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:36:44,286: CRITICAL: create_db_connection: Error Could not Connect to: '192.168.0.2 with User: 'nginxdynupdadr''
+2023-09-16 11:36:44,288: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 23, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:38:22,543: CRITICAL: create_db_connection: Error Could not Connect to: '192.168.0.2 with User: 'nginxdynupdadr''
+2023-09-16 11:38:22,545: DEBUG: create_db_connection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 25, in create_db_connection
+    connection = mysql.connector.connect(host=self.DB_HOST,user=self.DB_USER,passwd=self.DB_PASS,database=self.DB_NAME)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1044 (42000): Access denied for user 'nginxdynupdadr'@'192.168.0.10' to database 'nginxDataStor'
+
+2023-09-16 11:38:38,274: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-16 11:46:45,927: INFO: create_db_connection: Connecting to DB:nginxDataStore with user
+2023-09-16 11:46:45,960: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-16 11:48:09,391: INFO: create_db_connection: Connecting to DB:nginxDataStore with user
+2023-09-16 11:48:09,403: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-16 11:48:38,112: INFO: create_db_connection: Connecting to DB:nginxDataStore with user
+2023-09-16 11:48:38,121: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-16 11:50:36,618: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 11:50:36,627: DEBUG: create_db_connection: MySQL Database connection successful
+2023-09-16 12:24:53,151: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:24:53,212: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:25:08,195: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:25:08,205: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:29:24,375: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:29:24,386: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:29:51,521: INFO: checkDBConnection: Connection To Database lost
+2023-09-16 12:29:51,522: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:29:56,525: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:29:56,528: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:01,529: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:01,531: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:06,534: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:06,536: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:11,538: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:11,541: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:16,542: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:16,545: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:21,547: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:21,549: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:26,552: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:26,555: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:30:31,556: DEBUG: checkDBConnection: Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1249, in reconnect
+    self.connect()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\archi\Documents\Development\server.py", line 56, in checkDBConnection
+    self.ACTIVEDBCONNECTION.reconnect(attempts=2,delay=5)
+  File "C:\Users\archi\Documents\Development\.venv\Lib\site-packages\mysql\connector\abstracts.py", line 1258, in reconnect
+    raise InterfaceError(msg) from err
+mysql.connector.errors.InterfaceError: Can not reconnect to MySQL after 2 attempt(s): 2003 (HY000): Can't connect to MySQL server on '192.168.0.2:3306' (10065)
+
+2023-09-16 12:30:31,559: INFO: checkDBConnection: Attempting to Reconnect
+2023-09-16 12:35:22,710: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:35:22,719: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:36:45,382: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:36:45,391: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:37:36,705: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:37:36,714: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 12:37:45,303: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 12:37:45,313: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 17:14:17,330: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 17:14:17,341: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 17:14:37,981: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 17:14:37,991: INFO: create_db_connection: MySQL Database connection successful
+2023-09-16 17:18:41,594: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-16 17:18:41,605: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:08:18,111: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:08:18,122: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:13:27,005: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:13:27,015: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:15:11,144: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:15:11,153: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:16:12,742: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:16:12,753: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:17:24,765: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:17:24,774: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:18:25,058: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:18:25,067: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:20:24,382: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:20:24,392: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:20:31,864: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:20:31,873: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:20:45,653: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:20:45,663: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:27:12,594: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:27:12,605: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:27:26,607: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:27:26,616: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:27:47,685: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:27:47,694: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:30:46,034: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:30:46,042: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:31:24,657: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:31:24,667: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:31:40,437: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:31:40,446: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:37:49,053: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:37:49,062: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:38:12,733: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:38:12,743: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:38:22,004: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:38:22,014: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:38:54,584: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:38:54,593: INFO: create_db_connection: MySQL Database connection successful
+2023-09-17 10:40:15,322: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-17 10:40:15,331: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 10:49:55,872: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 10:49:55,944: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 11:29:06,841: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 11:29:06,850: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 11:29:43,297: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 11:29:43,306: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 11:30:01,533: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 11:30:01,542: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 11:32:57,179: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 11:32:57,189: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 11:36:51,053: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 11:36:51,063: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 12:08:45,764: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 12:08:45,774: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 12:08:56,425: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 12:08:56,435: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 12:09:13,909: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 12:09:13,919: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:13:14,998: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:13:15,007: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:14:03,506: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:14:03,514: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:14:20,717: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:14:20,726: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:14:29,767: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:14:29,776: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:15:21,889: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:15:21,898: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:35:25,645: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:35:25,654: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:36:58,311: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:36:58,320: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:37:10,349: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:37:10,359: INFO: create_db_connection: MySQL Database connection successful
+2023-09-20 14:37:16,337: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-20 14:37:16,346: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:29:20,122: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:29:20,192: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:29:31,964: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:29:31,973: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:33:11,438: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:33:11,447: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:33:45,703: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:33:45,711: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:34:55,346: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:34:55,356: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:35:48,542: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:35:48,551: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:50:07,784: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:50:07,792: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:50:25,852: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:50:25,860: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:50:35,047: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:50:35,055: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 09:52:12,489: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 09:52:12,498: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:01:32,874: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:01:32,884: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:01:46,301: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:01:46,311: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:01:59,017: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:01:59,026: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:02:46,674: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:02:46,684: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:03:37,587: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:03:37,596: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:28:46,109: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:28:46,120: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:30:09,887: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:30:09,897: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:30:52,484: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:30:52,493: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:31:07,524: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:31:07,534: INFO: create_db_connection: MySQL Database connection successful
+2023-09-21 10:40:10,273: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-21 10:40:10,282: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:10:24,236: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:10:24,255: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:11:10,511: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:11:10,520: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:11:16,427: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:11:16,437: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:11:44,954: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:11:44,965: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:11:57,832: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:11:57,842: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:12:24,128: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:12:24,137: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:13:27,169: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:13:27,180: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:13:44,170: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:13:44,180: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:15:42,658: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:15:42,667: INFO: create_db_connection: MySQL Database connection successful
+2023-09-22 12:16:29,243: INFO: create_db_connection: Connecting to DB:nginxDataStore with user 'nginxdynupdadr'@'192.168.0.10'
+2023-09-22 12:16:29,253: INFO: create_db_connection: MySQL Database connection successful

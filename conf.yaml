@@ -1,0 +1,5 @@
+DB_INFO:
+  DB_LOCATION: 192.168.0.2
+  DB_NAME: nginxDataStore
+  DB_USER_NAME: nginxdynupdadr
+  DB_PASSWORD: u8x9F7heVeBYeJYh
