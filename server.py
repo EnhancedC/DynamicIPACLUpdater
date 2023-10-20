@@ -27,13 +27,9 @@ class server:
         self.DB_HOST=DB_INFO['DB_LOCATION']
         self.DB_USER=DB_INFO['DB_USER_NAME']
         self.DB_PASS=DB_INFO['DB_PASSWORD']
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        dnsAddress=dns.resolver.Resolver().nameservers
-        s.connect((str(dnsAddress[0] if isinstance(dnsAddress,list) else dnsAddress), 80))
-        self.IPV4=s.getsockname()[0]
-        s.close()
+
         self.ACTIVEDBCONNECTION=self.create_db_connection()
-    def create_db_connection(self):
+    def create_db_connection(self) -> None:
         connection = None
         while connection==None:
             try:
@@ -155,9 +151,10 @@ if __name__ == "__main__":
     rootLogger.addHandler(loggingClientHandler)
     argPrs=argparse.ArgumentParser()
     argPrs.add_argument('sdf',choices=['server','create_config'],default='server',nargs='?')
-    afwe=argPrs.parse_args()
-    print(afwe)
-    with open('conf.yaml','r') as yml:
+    argPrs.add_argument('--ov-config',default='conf.yml')
+    parsedArguments=argPrs.parse_args()
+    print(parsedArguments)
+    with open(f'{parsedArguments.ov_config}','r') as yml:
         settings=yaml.safe_load(yml)
     test=server(settings['DB_INFO'])
     test.createNewConf('archie',False)
